@@ -9,3 +9,11 @@ th{
 tr:hover{
     background-color: rgb(217, 217, 242);
 }
+.btn-danger{
+    height: 50px;
+}
+.msg{
+    text-align: center;
+    margin: 11%;
+    color:crimson;
+}

@@ -3,6 +3,12 @@ import './style/TodoList.css';
 class TodoList extends React.Component {
 constructor(props){
     super(props);
+    this.done=this.done.bind(this);
+}
+done(sl)
+{
+    console.log("sl",sl);
+    this.props.done(sl);
 }
 render()
 {
@@ -10,7 +16,7 @@ render()
         <div className="todo-list-container">
             <table className="table table-hover">
                 <thead>
-                    <th>SL No.</th>
+                    <th>Task No.</th>
                     <th >Task</th>
                     <th>Time-Stamp</th>
                 </thead>
@@ -21,12 +27,15 @@ render()
                                 <td>{el.sl}</td>
                                 <td>{el.task}</td>
                                 <td>{el.time}</td>
+                                <td><button type="reset" className="btn btn-success" onClick={()=>{this.done(el.sl)}}>Done</button></td>
                             </tr>
                         );
                     })}
                     
                 </tbody>
             </table>
+            {this.props.todoList.length!=0 ? <button type="reset" className="btn btn-danger container" onClick={this.props.delete}>Delete All !!</button>:<h1 className="msg">Please Add Some Tasks to View</h1> }
+            
         </div>
     );
 }

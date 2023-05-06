@@ -28,6 +28,7 @@ class AddTodo extends React.Component
     {
         if(this.state.task.trim().length!=0)
         {
+            console.log(this.sl,this.state.task);
             this.props.set(this.sl,this.state.task);
             this.sl++;
         }
