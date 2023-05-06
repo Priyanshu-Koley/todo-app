@@ -1,4 +1,6 @@
 import React from 'react';
+import "bootstrap/dist/css/bootstrap.css";
+import "bootstrap/js/dist/modal";
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';

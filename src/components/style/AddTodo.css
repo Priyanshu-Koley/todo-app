@@ -1,0 +1,37 @@
+.add-todo-container{
+    background-color:rgb(167, 171, 200);
+    width: fit-content;
+    border-radius: 18px;
+    padding: 0px;
+    margin: 0 auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    overflow: hidden;
+}
+.add-todo-container:focus-within{
+    background-color:rgb(147, 153, 199);
+    
+}
+.input{
+    outline: none;
+    border: none;
+    width: 400px;
+    padding: 0px 10px;
+    margin: 0px 5px;
+    background-color: transparent;
+}
+
+.add-btn{ 
+   border: none;
+   background-color: rgb(98, 98, 228);
+   color: white;
+   padding: 12px 20px;
+}
+.add-btn:hover{ 
+   font-weight:600;
+}
+.add-btn:active{ 
+   background-color: rgb(152, 152, 229);
+   color: black;
+   
+}

@@ -1,0 +1,11 @@
+table{
+    text-align: center;
+}
+th{
+    padding: 10px;
+    border-bottom: 1.6px solid rgb(41, 41, 214);
+    color: rgb(41, 41, 214);
+}
+tr:hover{
+    background-color: rgb(217, 217, 242);
+}
