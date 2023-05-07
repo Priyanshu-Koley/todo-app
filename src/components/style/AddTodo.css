@@ -15,11 +15,12 @@
 .input{
     outline: none;
     border: none;
-    width: 400px;
+    width: 50vw;
     padding: 0px 10px;
     margin: 0px 5px;
     background-color: transparent;
 }
+
 
 .add-btn{ 
    border: none;
