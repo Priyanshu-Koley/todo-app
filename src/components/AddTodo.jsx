@@ -3,7 +3,6 @@ import './style/AddTodo.css';
 
 class AddTodo extends React.Component 
 {
-    sl=1;
     constructor(props){
         super(props);
         this.state={
@@ -28,9 +27,8 @@ class AddTodo extends React.Component
     {
         if(this.state.task.trim().length!=0)
         {
-            console.log(this.sl,this.state.task);
-            this.props.set(this.sl,this.state.task);
-            this.sl++;
+            this.props.set(this.state.task);
+            this.props.incrementsl();
         }
         else
             alert("Task cannot be empty!!");

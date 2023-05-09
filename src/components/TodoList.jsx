@@ -7,7 +7,6 @@ constructor(props){
 }
 done(sl)
 {
-    console.log("sl",sl);
     this.props.done(sl);
 }
 render()
