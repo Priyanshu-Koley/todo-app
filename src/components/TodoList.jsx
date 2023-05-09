@@ -20,10 +20,10 @@ render()
                     <th>Time-Stamp</th>
                 </thead>
                 <tbody>
-                    {this.props.todoList.map((el) => {
+                    {this.props.todoList.map((el,sl) => {
                         return (
                             <tr>
-                                <td>{el.sl}</td>
+                                <td>{sl+1}</td>
                                 <td>{el.task}</td>
                                 <td>{el.time}</td>
                                 <td><button type="reset" className="btn btn-success" onClick={()=>{this.done(el.sl)}}>Done</button></td>

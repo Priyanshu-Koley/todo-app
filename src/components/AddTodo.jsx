@@ -29,6 +29,7 @@ class AddTodo extends React.Component
         {
             this.props.set(this.state.task);
             this.props.incrementsl();
+            this.clearInput();
         }
         else
             alert("Task cannot be empty!!");
@@ -38,7 +39,7 @@ class AddTodo extends React.Component
     {
         return(
             <div className="add-todo-container">
-                    <input className="input" type="text" placeholder="Enter the task...." onChange={this.changeInput}/>
+                    <input className="input" type="text" value={this.state.task} placeholder="Enter the task...." onChange={this.changeInput}/>
                     <button className="add-btn" type="submit" onClick={this.save}>Add</button>
             </div>
         );
